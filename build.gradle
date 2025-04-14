@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'foxo.flanty'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.lettuce/lettuce-core
+    implementation 'io.lettuce:lettuce-core:6.5.5.RELEASE'
+}
+
+test {
+    useJUnitPlatform()
+}
