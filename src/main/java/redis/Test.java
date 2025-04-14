@@ -20,4 +20,10 @@ public class Test {
     public static void eventTest(StreamEvent event) {
         System.out.println(event.getMessage());
     }
+	
+	@RedisEventHandler(group = "release")
+    public static void eventTest(StreamEvent event) {
+		if (event.getMessage().equals("global") System.out.println(event.getMessage());
+        else System.out.println("wrong channel");
+    }
 }
