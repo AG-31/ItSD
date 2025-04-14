@@ -2,7 +2,8 @@ import io.lettuce.core.*;
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.sync.RedisCommands;
 import java.util.Map;
-@Deprecated(forRemoval = false)
+
+@Deprecated(forRemoval = true)
 public class LettuceRedisStreamExample {
     public static void main(String[] args) throws InterruptedException {
         RedisClient client = RedisClient.create("redis://127.0.0.1:6500");
